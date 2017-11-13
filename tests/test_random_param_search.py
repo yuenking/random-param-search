@@ -11,7 +11,7 @@ class MyTestCase(unittest.TestCase):
         result = random_param_search(params_dict=params_dict, size=50)
 
         self.assertEqual(len(result), 5)
-        self.assertIsInstance(result[0], dict)
+        self.assertIsInstance(result[50], dict)
 
 
 if __name__ == '__main__':
