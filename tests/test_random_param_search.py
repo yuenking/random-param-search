@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
                        'n_estimator': {'fn': np.random.randint, 'kwargs': {'low': 10, 'high': 1000}}}
         result = random_param_search(params_dict=params_dict, size=50)
 
-        self.assertEqual(len(result), 5)
+        self.assertEqual(len(result), 50)
         self.assertIsInstance(result[0], dict)
 
 
